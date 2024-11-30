@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Servicios de desarrollo de software, aplicaciones móviles y marketing digital para potenciar tu negocio."
+    />
+    <meta
+      name="keywords"
+      content="desarrollo de software, aplicaciones móviles, marketing digital, sitios web, desarrollo web"
+    />
+    <meta name="author" content="InCode" />
+
+    <!-- Meta Open Graph para redes sociales -->
+    <meta
+      property="og:title"
+      content="Servicios de Software y Marketing Digital - InCode"
+    />
+    <meta
+      property="og:description"
+      content="Desarrollamos soluciones digitales personalizadas para hacer crecer tu negocio."
+    />
+    <meta property="og:image" content="ruta-de-la-imagen.jpg" />
+    <meta property="og:url" content="https://www.tusitio.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome para iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./styles/estilos.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="./ImagenEmpresa.png"
+            alt="Logo InCode"
+            style="height: 40px; margin-right: 10px"
+          />
+          <span>InCode</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="display-4">Desarrollo de Software Profesional</h1>
+        <p class="lead">Soluciones Innovadoras para tu Negocio</p>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="container py-5">
+      <h2 class="text-center mb-4">Nuestros Servicios</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card service-card position-relative">
+            <div class="card-body text-center">
+              <i
+                class="fas fa-laptop-code fa-3x mb-3"
+                style="color: var(--primary-purple)"
+              ></i>
+              <h3>Desarrollo Web</h3>
+              <p>Webs modernas y funcionales.</p>
+            </div>
+            <!-- Tooltip -->
+            <div class="tooltip">
+              <div class="tooltip-arrow"></div>
+              <p>
+                Creamos sitios web adaptativos y funcionales, optimizados para
+                SEO y enfocados en tus metas comerciales.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card position-relative">
+            <div class="card-body text-center">
+              <i
+                class="fas fa-mobile-alt fa-3x mb-3"
+                style="color: var(--primary-purple)"
+              ></i>
+              <h3>Apps Móviles</h3>
+              <p>Apps nativas para iOS y Android.</p>
+            </div>
+            <!-- Tooltip -->
+            <div class="tooltip">
+              <div class="tooltip-arrow"></div>
+              <p>
+                Desarrollamos aplicaciones móviles intuitivas y de alto
+                rendimiento para iOS y Android.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card position-relative">
+            <div class="card-body text-center">
+              <i
+                class="fas fa-chart-line fa-3x mb-3"
+                style="color: var(--primary-purple)"
+              ></i>
+              <h3>Marketing Digital</h3>
+              <p>Estrategias de marketing personalizadas.</p>
+            </div>
+            <!-- Tooltip -->
+            <div class="tooltip">
+              <div class="tooltip-arrow"></div>
+              <p>
+                Diseñamos estrategias de marketing digital para aumentar tu
+                visibilidad y ventas en línea.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="contact-form">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <form id="contactForm">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Nombre"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  id="mensaje"
+                  placeholder="Mensaje"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary w-100"
+                style="background-color: var(--primary-purple); border: none"
+              >
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Redes Sociales -->
+    <footer class="text-center py-4 social-icons">
+      <div>
+        <a href="https://wa.me/8493153395"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/incoderd/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="mailto:siricristian48@gmail.com"
+          ><i class="far fa-envelope"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const nombre = document.getElementById("nombre").value;
+          const email = document.getElementById("email").value;
+          const mensaje = document.getElementById("mensaje").value;
+          console.log({ nombre, email, mensaje });
+          alert("¡Mensaje enviado!");
+        });
+    </script>
+  </body>
+</html>

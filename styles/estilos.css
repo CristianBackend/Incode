@@ -1,0 +1,102 @@
+:root {
+  --primary-purple: #6a0dad;
+  --secondary-white: #ffffff;
+  --gray-bg: #f8f9fa;
+  --dark-purple: #4b0082;
+}
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--secondary-white);
+  color: var(--primary-purple);
+}
+.navbar {
+  background-color: var(--primary-purple);
+}
+.navbar-brand,
+.nav-link {
+  color: var(--secondary-white) !important;
+  font-weight: bold;
+}
+.hero-section {
+  background: linear-gradient(to right, #6a0dad, #4b0082);
+  color: var(--secondary-white);
+  padding: 100px 0;
+  text-align: center;
+}
+.hero-section h1 {
+  animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.service-card {
+  border: 2px solid var(--primary-purple);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+}
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.social-icons a {
+  color: var(--primary-purple);
+  margin: 0 15px;
+  font-size: 35px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: var(--dark-purple);
+}
+.contact-form {
+  background-color: var(--gray-bg);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tooltip */
+/* Tooltip flotante avanzado */
+.tooltip {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #6a0dad, #4b0082);
+  color: var(--secondary-white);
+  padding: 15px 20px;
+  border-radius: 15px;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+  z-index: 10;
+  width: 250px;
+}
+/* Flecha decorativa */
+.tooltip-arrow {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to right, #6a0dad, #4b0082);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  z-index: 9;
+}
+/* Animación al pasar el mouse */
+.service-card:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-10px);
+}
