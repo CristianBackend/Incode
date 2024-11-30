@@ -214,11 +214,26 @@
         .getElementById("contactForm")
         .addEventListener("submit", function (e) {
           e.preventDefault();
+
+          // Obtener los valores del formulario
           const nombre = document.getElementById("nombre").value;
           const email = document.getElementById("email").value;
           const mensaje = document.getElementById("mensaje").value;
-          console.log({ nombre, email, mensaje });
-          alert("¡Mensaje enviado!");
+
+          // Crear el texto del mensaje
+          const textoMensaje = `Hola, soy ${nombre}. Mi correo es ${email}. Mensaje: ${mensaje}`;
+
+          // Convertir el texto a formato URL
+          const textoCodificado = encodeURIComponent(textoMensaje);
+
+          // Número de WhatsApp al que deseas enviar el mensaje (incluyendo código de país, sin el +)
+          const numeroWhatsApp = "8493153395";
+
+          // Redirigir a WhatsApp Web con el mensaje
+          window.open(
+            `https://wa.me/${numeroWhatsApp}?text=${textoCodificado}`,
+            "_blank"
+          );
         });
     </script>
   </body>
